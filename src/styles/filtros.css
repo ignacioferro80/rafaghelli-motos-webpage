@@ -1,0 +1,22 @@
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .filtro {
+    padding: 0.5rem 1rem;
+    border: 2px solid #C80078;
+    background-color: #fff;
+    color: #C80078;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filtro:hover {
+    background-color: #C80078;
+    color: white;
+  }
+  
