@@ -3,8 +3,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import Filtros from './components/Filtros';
-import ListaDeProductos from './components/listaDeProductos';
+import ListaDeProductos from './components/ListaDeProductos';
 import './App.css';
+import MotorcycleDetail from './components/MotorcycleDetail';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Banner />
       <Filtros />
-      <ListaDeProductos />
+      <ListaDeProductos /> 
     </div>
   );
 }
