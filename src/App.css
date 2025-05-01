@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1e1e1e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,6 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e;
   color: #f2f2f2;
 }
 
@@ -36,5 +35,22 @@ button {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.boton-volver {
+  margin: 30px;
+  margin-bottom: 0;
+  background-color: #C80078;
+  transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #dd2593;
+  color: white;
+}
+
+.boton-imagen {
+  width: 20px;
+  height: 20px;
 }
 

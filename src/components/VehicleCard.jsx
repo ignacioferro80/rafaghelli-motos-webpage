@@ -10,8 +10,8 @@ import '../styles/vehicleCard.css';
  *  - price: string (Precio del vehículo)
  *  - kilometraje: string (Kilometraje en km)
  */
-const VehicleCard = ({ photo, name, price, kilometraje }) => (
-  <div className="vehicle-card">
+const VehicleCard = ({ id, photo, name, price, kilometraje, setIdMotoSeleccionada }) => (
+  <div className="vehicle-card" onClick={() => [setIdMotoSeleccionada(id), console.log(name)]}>
     <div className="vehicle-card__image-container">
       <img src={photo} alt={name} className="vehicle-card__image" />
     </div>

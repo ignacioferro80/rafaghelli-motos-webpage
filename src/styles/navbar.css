@@ -5,26 +5,73 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
+  background-image: url('../assets/moto.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.navbar-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.navbar-banner-contenido {
+  z-index: 2;
+  display: flex;
+}
+
+
+.navbar-banner h2 {
+  font-size: 2.5rem;
+  color: #cc4444;
+  text-align: center;
+}
+
+.navbar-banner p {
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: center;
 }
 
 .navbar-logo {
-  max-width: 100px;
+  max-width: 200px;
   margin-right: 20px;
 }
 
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .navbar-links a {
-    color: #f2f2f2;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    margin: 10px;
-  }
-  
-  .navbar-links a:hover {
-    color: #e055a2;
-  }
+.navbar-links {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 10px;
+}
+
+.navbar-links a:hover {
+  color: #e055a2;
+}
