@@ -1,7 +1,7 @@
 // src/componentes/ListaDeProductos.jsx
 import React from 'react';
 import '../styles/listaDeProductos.css';
-import VehicleCard from './VehicleCard';
+import CardVehiculo from './CardVehiculo';
 import { motos } from '../scripts/motos';
 
 
@@ -9,12 +9,12 @@ const ListaDeProductos = ({ setIdMotoSeleccionada }) => {
   return (
     <div className="lista-productos">
       {motos.map(moto => (
-        <VehicleCard
+        <CardVehiculo
           id={moto.id}
-          photo={moto.gallery[0]}
-          name={moto.name}
-          price={moto.price}
-          kilometraje={moto.kilometers}
+          foto={moto.galeria[0]}
+          nombre={moto.nombre}
+          precio={moto.precio}
+          kilometros={moto.kilometros}
           setIdMotoSeleccionada={setIdMotoSeleccionada}
         />
       ))}

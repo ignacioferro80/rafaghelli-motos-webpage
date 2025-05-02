@@ -1,6 +1,6 @@
 /* src/styles/motorcycleDetail.css */
 
-.motorcycle-detail {
+.detalle-moto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -13,12 +13,12 @@
     margin: 2rem auto;
   }
   
-  .motorcycle-detail__left {
+  .detalle-moto__izq {
     display: flex;
     flex-direction: column;
   }
   
-  .motorcycle-detail__main-image {
+  .detalle-moto__imagen-principal {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -26,19 +26,19 @@
     margin-bottom: 1rem;
   }
   
-  .motorcycle-detail__main-image img {
+  .detalle-moto__imagen-principal img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .motorcycle-detail__thumbnails {
+  .detalle-moto__thumbnails {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
   }
   
-  .motorcycle-detail__thumb {
+  .detalle-moto__thumb {
     width: 60px;
     height: 40px;
     overflow: hidden;
@@ -48,28 +48,28 @@
     transition: border-color 0.2s;
   }
   
-  .motorcycle-detail__thumb.active {
+  .detalle-moto__thumb.active {
     border-color: #e055a2; /* acento rosado */
   }
   
-  .motorcycle-detail__thumb img {
+  .detalle-moto__thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  .motorcycle-detail__right {
+  .detalle-moto__der {
     display: flex;
     flex-direction: column;
   }
   
-  .motorcycle-detail__title {
+  .detalle-moto__titulo {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     color: #fff;
   }
   
-  .motorcycle-detail__meta {
+  .detalle-moto__meta {
     display: flex;
     gap: 2rem;
     font-size: 1rem;
@@ -77,13 +77,13 @@
     color: #cccccc;
   }
   
-  .motorcycle-detail__year,
-  .motorcycle-detail__kilometers,
-  .motorcycle-detail__price {
+  .detalle-moto__anio,
+  .detalle-moto__kilometros,
+  .detalle-moto__precio {
     font-weight: 500;
   }
   
-  .motorcycle-detail__description {
+  .detalle-moto__descripcion {
     font-size: 1rem;
     line-height: 1.4;
     color: #bbbbbb;
@@ -92,19 +92,19 @@
   
   /* Adaptativo */
   @media (max-width: 768px) {
-    .motorcycle-detail {
+    .detalle-moto {
       grid-template-columns: 1fr;
     }
-    .motorcycle-detail__meta {
+    .detalle-moto__meta {
       flex-direction: column;
       gap: 0.5rem;
     }
-    .motorcycle-detail__thumbnails {
+    .detalle-moto__thumbnails {
       justify-content: flex-start;
     }
   }
 
-    .motorcycle-detail__btn {
+    .detalle-moto__btn {
         display: inline-block;
         background: #e05555;        /* rojo/rosado de acento */
         color: #fff;
@@ -117,7 +117,7 @@
         transition: background 0.2s;
       }
       
-      .motorcycle-detail__btn:hover {
+      .detalle-moto__btn:hover {
         background: #c03d3d;
       }
       
