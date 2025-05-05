@@ -17,6 +17,8 @@ const WHATSAPP_URL = 'https://api.whatsapp.com/send/?phone=1570741745&text&type=
 const DetalleMoto = ({ nombre, anio, kilometros, precio, descripcion, galeria = [] }) => {
   const [imagenSeleccionada, setImagenSeleccionada] = useState(galeria[0] || '');
 
+  console.log(galeria.length)
+
   return (
     <div className="detalle-moto">
       {/* Columna izquierda: galería de imágenes */}

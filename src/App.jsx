@@ -10,8 +10,13 @@ import flechaBlanca from './assets/flechaBlanca.png';
 
 function App() {
 
+  // Moto seleccionada
   const [idMotoSeleccionada, setIdMotoSeleccionada] = useState(null);
   const [motoSeleccionada, setMotoSeleccionada] = useState(null);
+
+  // Filtros seleccionados
+  const [estado, setEstado] = useState("Todos");
+  const [marca, setMarca] = useState("Todos");
 
   useEffect(() => {
     if (idMotoSeleccionada) {
@@ -47,8 +52,8 @@ function App() {
 
         <div>
           <Navbar />
-          <Filtros />
-          <ListaDeProductos setIdMotoSeleccionada={setIdMotoSeleccionada} />
+          <Filtros setEstado={setEstado} setMarca={setMarca} />
+          <ListaDeProductos setIdMotoSeleccionada={setIdMotoSeleccionada} estado={estado} marca={marca}/>
         </div>
       )}
     </div>
