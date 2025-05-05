@@ -63,6 +63,7 @@
   display: flex;
   gap: 1rem;
   list-style: none;
+  cursor: pointer;
 }
 
 .navbar-links a {

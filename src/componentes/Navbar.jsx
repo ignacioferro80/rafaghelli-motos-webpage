@@ -2,9 +2,12 @@
 import React from 'react';
 import '../styles/navbar.css';
 import logo from '../assets/rafaghelli-logo.png';
-
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="navbar-banner-contenido">
@@ -14,9 +17,9 @@ const Navbar = () => {
           <p>Compra y venta de motos 0km y usadas</p>
         </section>
         <ul className="navbar-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acceder</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a onClick={() => navigate("/")}>Inicio</a></li>
+          <li><a onClick={() => navigate("/acceder")}>Acceder</a></li>
+          <li><a >Contacto</a></li>
         </ul>
       </div>
     </nav>
