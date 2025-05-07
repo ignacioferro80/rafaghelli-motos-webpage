@@ -1,0 +1,90 @@
+.acceso-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Capa de fondo */
+  .acceso-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/casco.jpg') center/cover no-repeat;
+    opacity: 0.3; /* Opacidad del fondo */
+    z-index: 0;
+  }
+  
+  .boton-volver-form {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+    margin: 30px;
+    margin-bottom: 0;
+    background-color: #C80078;
+    transition: all 0.3s ease;
+  }
+
+  .boton-volver-form:hover {
+    background-color: #dd2593;
+    color: white;
+  }
+
+  /* Capa frontal (formulario) */
+  .acceso-form {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.60);
+    padding: 20px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+  }
+
+  .acceso-logo {
+    size: 50%;
+    margin: 0;
+  }
+
+  .acceso-titulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ececec;
+    text-align: center;
+  }
+
+  .acceso-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .acceso-button {
+    padding: 10px;
+    background-color: #C80078;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .acceso-button:hover {
+    background-color: #e055a2;
+  }
+  

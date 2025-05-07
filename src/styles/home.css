@@ -1,0 +1,17 @@
+.boton-volver {
+    margin: 30px;
+    margin-bottom: 0;
+    background-color: #C80078;
+    transition: all 0.3s ease;
+  }
+  
+  .boton-volver:hover {
+    background-color: #dd2593;
+    color: white;
+  }
+  
+  .boton-imagen {
+    width: 20px;
+    height: 20px;
+  }
+  
