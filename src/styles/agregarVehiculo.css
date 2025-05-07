@@ -1,0 +1,138 @@
+/* src/styles/agregarVehiculo.css */
+
+/* ————————— Reset box‐sizing ————————— */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* ————————— Contenedor “card” ————————— */
+  .contenedor-formulario {
+    background-color: #292a2d;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    max-width: 700px;
+    width: 100%;
+    margin: 40px auto;
+    color: #fff;
+    overflow-x: hidden; /* evita desborde horizontal */
+  }
+  
+  /* ————————— Grupos de campos ————————— */
+  .grupo-formulario {
+    margin-bottom: 24px;
+    min-width: 0;        /* permite que en grid/flex encojen */
+  }
+  
+  .grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  /* ————————— Inputs & textarea ————————— */
+  .grupo-formulario input,
+  .grupo-formulario textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;                /* clave para no desbordar */
+    padding: 12px 16px;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  
+  .grupo-formulario textarea {
+    resize: vertical;           /* sólo permita cambio de alto */
+  }
+  
+  .grupo-formulario input::placeholder,
+  .grupo-formulario textarea::placeholder {
+    color: #888;
+  }
+  
+  .grupo-formulario input:focus,
+  .grupo-formulario textarea:focus {
+    outline: none;
+    background-color: #252525;
+    box-shadow: 0 0 0 2px rgba(230,57,70,0.3);
+  }
+  
+  /* ————————— Fila Año/Precio/Km ————————— */
+  .fila-formulario {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  /* ————————— Galería de imágenes ————————— */
+  .campo-galeria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .campo-galeria input {
+    flex: 1;
+    min-width: 0;     /* también aquí, para evitar overflow */
+  }
+  
+  /* ————————— Botones ————————— */
+  .btn-remover {
+    background-color: #e63946;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0 12px;
+    height: 40px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-remover:hover {
+    background-color: #d62828;
+  }
+  
+  .btn-agregar {
+    background: transparent;
+    border: 1px solid #e63946;
+    color: #e63946;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-agregar:hover {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .btn-enviar {
+    width: 100%;
+    background-color: #e63946;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .btn-enviar:hover {
+    background-color: #d62828;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  }
+  
