@@ -6,7 +6,7 @@ const Filtros = ({ setEstado, setMarca }) => {
 
   const marcas = ["Honda", "Harley", "Ducati", "Yamaha", "Kawasaki", "Suzuki", "BMW", "Triumph", "KTM", "Aprilia"];
   const [estadoBoton, setEstadoBoton] = useState("Estado");
-  const [marcaBoton, setMarcaBoton] = useState("Marcas");
+  const [marcaBoton, setMarcaBoton] = useState("Marca");
 
   return (
     <div className="filtros">
