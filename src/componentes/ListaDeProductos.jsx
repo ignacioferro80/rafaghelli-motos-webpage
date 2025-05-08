@@ -23,7 +23,7 @@ const ListaDeProductos = ({ setIdMotoSeleccionada, estado, marca }) => {
   return (
     <div className="lista-productos">
       {motosEstadoActual.map(moto => (
-        (marca === "Todos" || moto.nombre === marca) &&
+        (marca === "Todos" || moto.nombre.includes(marca)) &&
         <CardVehiculo
           id={moto.id}
           foto={moto.galeria[0]}

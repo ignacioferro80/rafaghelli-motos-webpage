@@ -16,6 +16,20 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
+
+  .filtro-todos {
+    padding: 0.5rem 1rem;
+    background-color: #C80078;
+    color: #f0cce1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .filtro-todos:hover {
+    background-color: #db419e;
+    color: white;
+  }
   
   .filtro:hover {
     background-color: #C80078;

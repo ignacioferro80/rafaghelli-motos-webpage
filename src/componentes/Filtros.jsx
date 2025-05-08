@@ -10,10 +10,10 @@ const Filtros = ({ setEstado, setMarca }) => {
 
   return (
     <div className="filtros">
-      <button onClick={() => { setEstado("Todos"); setMarca("Todos"); setEstadoBoton("Estado"); setMarcaBoton("Marca")}} className="filtro">Todos</button>
+      <button onClick={() => { setEstado("Todos"); setMarca("Todos"); setEstadoBoton("Estado"); setMarcaBoton("Marca")}} className="filtro-todos">Todos</button>
 
       <div className="dropdown">
-        <button className="filtro">{estadoBoton}</button>
+        <button className="filtro">{estadoBoton} ▼</button>
         <div className="dropdown-content">
           <a onClick={() => { setEstado('Nuevas'); setEstadoBoton("Nuevas");}}>Nuevas</a>
           <a onClick={() => { setEstado('Usadas'); setEstadoBoton("Usadas");}}>Usadas</a>
@@ -21,7 +21,7 @@ const Filtros = ({ setEstado, setMarca }) => {
       </div>
 
       <div className="dropdown">
-        <button className="filtro">{marcaBoton}</button>
+        <button className="filtro">{marcaBoton} ▼</button>
         <div className="dropdown-content">
           {marcas.sort().map((marca) => (
             <a key={marca} onClick={() => { setMarca(marca); setMarcaBoton(marca); }}>{marca}</a>
