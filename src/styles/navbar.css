@@ -1,4 +1,5 @@
 .navbar {
+  width: 100%;
   background-color: #000;
   color: #f2f2f2;
   display: flex;
@@ -52,7 +53,21 @@
 
 .navbar-logo {
   max-width: 400px;
-  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.navbar-logo img {
+  max-width: 90%;
+  height: auto;
+}
+
+@media (max-width: 1110px) {
+  .navbar-logo {
+    display: none;
+  }
 }
 
 .navbar-funciones-personal{
